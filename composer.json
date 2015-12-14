@@ -1,0 +1,6 @@
+{
+    "require": {
+        "fzaninotto/faker": "^1.5",
+        "gabordemooij/redbean": "^4.3"
+    }
+}
