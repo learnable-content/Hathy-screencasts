@@ -1,0 +1,4 @@
+[2015-12-19 19:46:08] myChannel.DEBUG: My first debug message! [] []
+[2015-12-19 19:46:08] myChannel.ERROR: Something went wrong [] []
+[2015-12-19 19:51:21] myChannel.DEBUG: My first debug message! [] []
+[2015-12-19 19:51:21] myChannel.ERROR: Something went wrong [] []

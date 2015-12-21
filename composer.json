@@ -1,0 +1,6 @@
+{
+    "require": {
+        "monolog/monolog": "^1.17",
+        "wazaari/monolog-mysql": "^1.0"
+    }
+}
