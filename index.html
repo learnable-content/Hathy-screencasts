@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creating animations inside a canvas</title>
+</head>
+<body>
+    <canvas id="my_canvas"
+            width="300" height="300"
+            style="border:solid 1px">
+    </canvas>
+    
+    <script>
+        (function() {
+            
+            var myCanvas = 
+                    document.getElementById("my_canvas");
+            var context = myCanvas.getContext("2d");                        
+            
+            var initialX=20;
+            var finalX=220;
+            var currentX=initialX;
+
+            function draw() {
+                context.clearRect(0,0,300,300);
+                context.fillRect(currentX,currentX,50,50);
+
+                if(currentX<finalX) {
+                    currentX=currentX+1;
+                }
+
+                requestAnimationFrame(draw);
+            }
+            
+            draw();
+            
+        })();
+    </script>
+</body>
+</html>
