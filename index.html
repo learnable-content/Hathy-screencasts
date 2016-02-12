@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Using Canvas States and Transformations</title>
+</head>
+<body>
+    <canvas id="my_canvas" width="300" height="300"
+            style="border:solid gray 2px"></canvas>
+    
+    <script>
+        (function() {
+          var myCanvas = 
+                document.getElementById("my_canvas");
+          var context = myCanvas.getContext("2d");
+          
+          //context.translate(150,50);
+          //context.rotate(-10*Math.PI/180);
+          //context.scale(2,2);
+          
+          context.fillStyle="red";
+          context.shadowBlur=10;
+          context.shadowColor="black";
+          context.save();
+          context.save();
+          context.rotate(-10*Math.PI/180);
+          context.fillRect(50,50,80,50);
+          context.restore();
+          context.fillStyle="green";
+          context.shadowBlur=20;
+          context.shadowColor="blue";
+          context.fillRect(50,120,80,50);
+          
+          context.restore();
+          context.fillRect(50,190,80,50);
+        })();
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
